@@ -35,7 +35,7 @@
     height: 100%;
 }
 
-.profile{
+.part_up{
     width: 100%;
     height: 65px;
 }
@@ -65,14 +65,35 @@
 }
 
 .list_people_chat{
-    height: calc(100% - 185px);
+    height: calc(100% - 189px);
     overflow-y: scroll;
 }
 
 .card_people:hover{
     background-color: #dcdcdc;
+    cursor: pointer;
 }
 
 .icon_profilo1{
     width: 55px;
+}
+
+/* parte destra */
+
+.part_middle{
+    width: calc(100% + 24px);
+    height: calc(100% - 130px);
+    overflow-y: scroll;
+    background-image: url(../img/sfondo-chat.png);
+    background-size: 500px;
+}
+
+.part_down{
+    width: calc(100% + 24px);
+    height: 65px;
+    background-color: #f3eeea;
+}
+
+.color_icon_dark{
+    color: #6b7376;
 }

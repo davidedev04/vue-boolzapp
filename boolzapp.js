@@ -92,7 +92,7 @@ createApp({
                 },
                 {
                     name: 'Francesca',
-                    avatar: 'img/woman(1).png',
+                    avatar: 'img/empathy.png',
                     visible: true,
                     messages: [
                         {
@@ -126,7 +126,7 @@ createApp({
                 },
                 {
                     name: 'Marialaura',
-                    avatar: 'img/girl.png',
+                    avatar: 'img/woman(1).png',
                     visible: true,
                     messages: [
                         {
@@ -143,7 +143,7 @@ createApp({
                 },
                 {
                     name: 'Gloria',
-                    avatar: 'img/empathy.png',
+                    avatar: 'img/girl.png',
                     visible: true,
                     messages: [
                         {
