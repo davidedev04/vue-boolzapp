@@ -5,10 +5,11 @@ createApp({
     data() {
 
         return {
+
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: 'img/avatar_1.png',
+                    avatar: 'img/avatar_1.jpg',
                     visible: true,
                     messages: [
                         {
@@ -30,7 +31,7 @@ createApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: 'img/avatar_2.png',
+                    avatar: 'img/avatar_2.jpg',
                     visible: true,
                     messages: [
                         {
@@ -52,7 +53,7 @@ createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: 'img/avatar_3.png',
+                    avatar: 'img/avatar_3.jpg',
                     visible: true,
                     messages: [
                         {
@@ -74,7 +75,7 @@ createApp({
                 },
                 {
                     name: 'Sofia',
-                    avatar: 'img/avatar_io.png',
+                    avatar: 'img/avatar_io.jpg',
                     visible: true,
                     messages: [
                         {
@@ -90,9 +91,8 @@ createApp({
                     ],
                 },
             
-
             ]
-
+            
         }
 
     }

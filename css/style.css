@@ -24,6 +24,7 @@
 
 .left_chat{
     border-right: 1px solid #d3d3d3;
+    height: 100%;
 }
 
 .profile{
@@ -53,4 +54,13 @@
 
 .color_a{
     color: #838383;
+}
+
+.list_people_chat{
+    margin: 0 -12px 0 -12px;
+    overflow-y: scroll;
+}
+
+.icon_profilo1{
+    width: 55px;
 }
