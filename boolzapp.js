@@ -9,7 +9,7 @@ createApp({
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: 'img/avatar_1.jpg',
+                    avatar: 'img/man.png',
                     visible: true,
                     messages: [
                         {
@@ -31,7 +31,7 @@ createApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: 'img/avatar_2.jpg',
+                    avatar: 'img/man(1).png',
                     visible: true,
                     messages: [
                         {
@@ -53,7 +53,7 @@ createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: 'img/avatar_3.jpg',
+                    avatar: 'img/man(2).png',
                     visible: true,
                     messages: [
                         {
@@ -75,7 +75,75 @@ createApp({
                 },
                 {
                     name: 'Sofia',
-                    avatar: 'img/avatar_io.jpg',
+                    avatar: 'img/woman.png',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'Si, ma preferirei andare al cinema',
+                            status: 'received'
+                        }
+                    ],
+                },
+                {
+                    name: 'Francesca',
+                    avatar: 'img/woman(1).png',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'Si, ma preferirei andare al cinema',
+                            status: 'received'
+                        }
+                    ],
+                },
+                {
+                    name: 'Vittorio',
+                    avatar: 'img/user.png',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'Si, ma preferirei andare al cinema',
+                            status: 'received'
+                        }
+                    ],
+                },
+                {
+                    name: 'Marialaura',
+                    avatar: 'img/girl.png',
+                    visible: true,
+                    messages: [
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '10/01/2020 15:50:00',
+                            message: 'Si, ma preferirei andare al cinema',
+                            status: 'received'
+                        }
+                    ],
+                },
+                {
+                    name: 'Gloria',
+                    avatar: 'img/empathy.png',
                     visible: true,
                     messages: [
                         {

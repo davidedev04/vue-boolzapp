@@ -20,6 +20,14 @@
     width: 45px;
 }
 
+.color_white{
+    background-color: #f8f8f8;
+}
+
+.margin_negative{
+    margin: 0 -12px 0 -12px;
+}
+
 /* parte sinistra */
 
 .left_chat{
@@ -29,6 +37,7 @@
 
 .profile{
     width: 100%;
+    height: 65px;
 }
 
 .color_icon{
@@ -38,7 +47,6 @@
 .notifications{
     height: 70px;
     background-color: #8edafc;
-    margin: 0 -12px 0 -12px;
 }
 
 .bell{
@@ -57,8 +65,12 @@
 }
 
 .list_people_chat{
-    margin: 0 -12px 0 -12px;
+    height: calc(100% - 185px);
     overflow-y: scroll;
+}
+
+.card_people:hover{
+    background-color: #dcdcdc;
 }
 
 .icon_profilo1{

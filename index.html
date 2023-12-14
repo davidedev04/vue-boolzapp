@@ -36,19 +36,19 @@
                     <!-- PROFILO -->
 
                     <div class="py-2">
-                        <img src="img/avatar_4.jpg" alt="io" class="icon_profilo rounded-circle">
-                        <span>Davide</span>
+                        <img src="img/gamer.png" alt="io" class="icon_profilo rounded-circle">
+                        <span class="ps-2">Davide</span>
                     </div>
                     <div class="icons fs-5 color_icon">
                         <i class="fa-solid fa-circle-notch"></i>
-                        <i class="fa-solid fa-message px-3"></i>
+                        <i class="fa-solid fa-message px-4"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
 
                 <!-- AVVISO NOTIFICHE -->
 
-                <div class="notifications d-flex justify-content-start align-items-center">
+                <div class="notifications margin_negative d-flex justify-content-start align-items-center">
                     <div class="bell rounded-circle fs-5 d-flex justify-content-center align-items-center ms-3">
                         <i class="fa-solid fa-bell-slash"></i>
                     </div>
@@ -60,19 +60,19 @@
 
                 <!-- BARRA DI RICERCA -->
 
-                <div class="search_chat">
-                    <div class="input-group my-2">
-                        <span class="input-group-text color_white">
+                <div class=" margin_negative color_white">
+                    <div class="input-group p-2">
+                        <span class="input-group-text">
                             <i class="fa-solid fa-magnifying-glass color_icon"></i>
                         </span>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
 
                 <!-- CHAT PERSONE -->
 
-                <div class="list_people_chat">
-                    <div class="border-top ps-3" v-for="item in contacts">
+                <div class="list_people_chat margin_negative color_white">
+                    <div class="card_people border-top ps-3" v-for="item in contacts">
                         <div class="py-2">
                             <img :src="item.avatar" alt="io" class="icon_profilo1 rounded-circle">
                             <span class="ps-2">{{item.name}}</span>
