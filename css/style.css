@@ -4,6 +4,12 @@
     background-color: #009688;
 }
 
+.middle_grey{
+    width: 100%;
+    height: 85vh;
+    background-color: #d7dbd5;
+}
+
 .content{
     min-width: 100%;
     height: 100%;
@@ -11,7 +17,7 @@
 }
 
 .card_principale{
-    margin-top: -10vh;
+    margin-top: -95vh;
     min-width: 1000px;
     height: 90vh;
 }
@@ -21,7 +27,7 @@
 }
 
 .color_white{
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 
 .margin_negative{
@@ -70,7 +76,7 @@
 }
 
 .card_people:hover{
-    background-color: #dcdcdc;
+    background-color: #e9ebeb;
     cursor: pointer;
 }
 
