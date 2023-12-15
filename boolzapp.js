@@ -6,11 +6,15 @@ createApp({
 
         return {
 
+            contArr: 0,
+
             contacts: [
                 {
                     name: 'Michele',
                     avatar: 'img/man.png',
-                    visible: true,
+                    classObject: {
+                        active: true,
+                    },
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -32,7 +36,9 @@ createApp({
                 {
                     name: 'Fabio',
                     avatar: 'img/man(1).png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '20/03/2020 16:30:00',
@@ -54,7 +60,9 @@ createApp({
                 {
                     name: 'Samuele',
                     avatar: 'img/man(2).png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '28/03/2020 10:10:40',
@@ -76,7 +84,9 @@ createApp({
                 {
                     name: 'Sofia',
                     avatar: 'img/woman.png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -93,7 +103,9 @@ createApp({
                 {
                     name: 'Francesca',
                     avatar: 'img/empathy.png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -110,7 +122,9 @@ createApp({
                 {
                     name: 'Vittorio',
                     avatar: 'img/user.png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -127,7 +141,9 @@ createApp({
                 {
                     name: 'Marialaura',
                     avatar: 'img/woman(1).png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -144,7 +160,9 @@ createApp({
                 {
                     name: 'Gloria',
                     avatar: 'img/girl.png',
-                    visible: true,
+                    classObject: {
+                        active: false,
+                    },
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -158,11 +176,18 @@ createApp({
                         }
                     ],
                 },
-            
+
             ]
-            
+
         }
 
+    },
+    methods: {
+        onClick(index) {
+            this.contacts.forEach((item, i) => {
+                item.classObject.active = i === index;
+            });
+        }
     }
 
 }).mount('.content')

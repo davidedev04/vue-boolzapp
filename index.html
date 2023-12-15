@@ -73,10 +73,11 @@
                 <!-- CHAT PERSONE -->
 
                 <div class="list_people_chat margin_negative color_white">
-                    <div class="card_people border-top ps-3" v-for="item in contacts">
+                    
+                    <div class="card_people border-top ps-3" v-for="(item, index) in contacts" :class="{ 'active': item.classObject.active }" @click="onClick(index)">
                         <div class="py-2">
                             <img :src="item.avatar" alt="io" class="icon_profilo1">
-                            <span class="ps-2">{{item.name}}</span>
+                            <span class="ps-2">{{ item.name }}</span>
                         </div>
                     </div>
                 </div>
