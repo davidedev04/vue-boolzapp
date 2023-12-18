@@ -107,12 +107,12 @@ createApp({
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            message: 'Sei andata a lezione di ballo oggi?',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Si, è andato alla grande',
                             status: 'received'
                         }
                     ],
@@ -126,12 +126,12 @@ createApp({
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            message: 'Ci facciamo un giro in macchina più tardi?',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Scusa ma non posso, ho allenamento più tardi',
                             status: 'received'
                         }
                     ],
@@ -145,12 +145,12 @@ createApp({
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            message: 'Oggi ti va di uscire?',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Si, mi piacerebbe molto 😊',
                             status: 'received'
                         }
                     ],
@@ -164,13 +164,18 @@ createApp({
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            message: 'Ti serve un passaggio stasera per il ccompleanno?',
                             status: 'sent'
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'No tranquillo, mi accompagna mia mamma',
                             status: 'received'
+                        },
+                        {
+                            date: '10/01/2020 15:30:55',
+                            message: 'Va bene',
+                            status: 'sent'
                         }
                     ],
                 },
@@ -187,21 +192,11 @@ createApp({
             this.contacts.forEach((item, i) => {
                 item.classObject.active = i === index;
                 this.activeContactIndex = index;
-                /* if(contacts.message.status === sent){
-                    document.getElementById('message').classList.add('messageReceived');
-                }else{
-                    document.getElementById('message').classList.add('messageSent');
-                } */
             });
         },
-        /* applyMessageClass(message) {
-            return message.status === 'sent' ? 'messageSent' : 'messageReceived';
-          } */
-        /* activeDiv(){
-            if(card_people.classList.contains(active)){
-                
-            }
-        } */
+        addMessage() {
+
+        }
     }
 
 }).mount('.content')

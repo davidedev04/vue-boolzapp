@@ -97,6 +97,8 @@
 .part_down{
     width: calc(100% + 24px);
     height: 65px;
+    width: 864px;
+    position: fixed;
     background-color: #f3eeea;
 }
 

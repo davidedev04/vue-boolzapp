@@ -102,11 +102,14 @@
                 <div class="part_middle margin_negative d-flex  ps-3 pe-3">
                     <div style="width: 100%;">
 
-                            <div id="message" style="display: flex; flex-direction: column;" :class="['message', item.status === 'received' ? 'align-items-start' : 'align-items-end']" v-for="item in contacts[activeContactIndex].messages">
-                                <span :class="['message', item.status === 'received' ? 'received' : 'sent']">
-                                    {{ item.message }}
-                                </sapn>
-                            </div>                  
+                        <div id="message" style="display: flex; flex-direction: column;"
+                            :class="['message', item.status === 'received' ? 'align-items-start' : 'align-items-end']"
+                            v-for="item in contacts[activeContactIndex].messages">
+                            <span :class="['message', item.status === 'received' ? 'received' : 'sent']">
+                                {{ item.message }}
+                            </span>
+                        </div>
+
                     </div>
 
                 </div>
@@ -115,7 +118,7 @@
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
                     <div class="col-10 d-flex justify-content-center align-items-center">
-                        <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+                        <input type="text" class="form-control" placeholder="Scrivi un messaggio" @keyup.enter="addMessage">
                     </div>
                     <div class="col-1 fs-5 color_icon_dark d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-microphone"></i>
