@@ -182,6 +182,8 @@ createApp({
 
             ],
 
+            mex : "",
+
             activeContactIndex: 0
 
         }
@@ -194,8 +196,12 @@ createApp({
                 this.activeContactIndex = index;
             });
         },
-        addMessage() {
-
+        addMessage(contact) {
+            contact.messages.push({
+                date: '30/12/2023 11:30:00',
+                message: 'mex',
+                status: 'sent'
+            })
         }
     }
 

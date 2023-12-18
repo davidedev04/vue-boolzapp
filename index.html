@@ -118,7 +118,7 @@
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
                     <div class="col-10 d-flex justify-content-center align-items-center">
-                        <input type="text" class="form-control" placeholder="Scrivi un messaggio" @keyup.enter="addMessage">
+                        <input type="text" class="form-control" placeholder="Scrivi un messaggio" v-model="mex" @keyup.enter="addMessage(contact)">
                     </div>
                     <div class="col-1 fs-5 color_icon_dark d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-microphone"></i>
