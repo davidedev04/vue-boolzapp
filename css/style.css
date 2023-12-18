@@ -103,3 +103,26 @@
 .color_icon_dark{
     color: #6b7376;
 }
+
+.received{
+    max-width: 60%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    align-items: end;
+}
+.sent{
+    max-width: 60%;
+    background-color: #d5f9ba;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* .test1{
+    justify-content: end;
+}
+.test2{
+    justify-content: start;
+} */

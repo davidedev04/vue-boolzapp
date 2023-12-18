@@ -27,7 +27,7 @@
         <div class="top_green"></div>
         <div class="middle_grey"></div>
     </div>
-    
+
     <div class="container d-flex justify-content-center align-items-center card_principale">
         <main class="row content">
             <section class="left_chat col-4">
@@ -73,13 +73,15 @@
                 <!-- CHAT PERSONE -->
 
                 <div class="list_people_chat margin_negative color_white">
-                    
-                    <div class="card_people border-top ps-3" v-for="(item, index) in contacts" :class="{ 'active': item.classObject.active }" @click="onClick(index)">
+
+                    <div class="card_people border-top ps-3" v-for="(item, index) in contacts"
+                        :class="{ 'active': item.classObject.active }" @click="onClick(index)">
                         <div class="py-2">
                             <img :src="item.avatar" alt="io" class="icon_profilo1">
                             <span class="ps-2">{{ item.name }}</span>
                         </div>
                     </div>
+
                 </div>
 
             </section>
@@ -87,9 +89,9 @@
             <section class="col-8">
 
                 <div class="part_up d-flex justify-content-between align-items-center ">
-                    <div class="py-2">
-                        <img :src="contacts[0].avatar" alt="io" class="icon_profilo">
-                        <span class="ps-2">{{contacts[0].name}}</span>
+                    <div id="show_name" class="py-2">
+                        <img :src="contacts[activeContactIndex].avatar" alt="io" class="icon_profilo">
+                        <span class="ps-2">{{ contacts[activeContactIndex].name }}</span>
                     </div>
                     <div class="icons fs-5 color_icon">
                         <i class="fa-solid fa-magnifying-glass color_icon"></i>
@@ -97,8 +99,16 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-                <div class="part_middle margin_negative">
-                    
+                <div class="part_middle margin_negative d-flex  ps-3 pe-3">
+                    <div style="width: 100%;">
+
+                            <div id="message" style="display: flex; flex-direction: column;" :class="['message', item.status === 'received' ? 'align-items-start' : 'align-items-end']" v-for="item in contacts[activeContactIndex].messages">
+                                <span :class="['message', item.status === 'received' ? 'received' : 'sent']">
+                                    {{ item.message }}
+                                </sapn>
+                            </div>                  
+                    </div>
+
                 </div>
                 <div class="row part_down">
                     <div class="col-1 fs-5 color_icon_dark d-flex justify-content-center align-items-center">

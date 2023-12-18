@@ -6,8 +6,6 @@ createApp({
 
         return {
 
-            contArr: 0,
-
             contacts: [
                 {
                     name: 'Michele',
@@ -177,7 +175,9 @@ createApp({
                     ],
                 },
 
-            ]
+            ],
+
+            activeContactIndex: 0
 
         }
 
@@ -186,8 +186,22 @@ createApp({
         onClick(index) {
             this.contacts.forEach((item, i) => {
                 item.classObject.active = i === index;
+                this.activeContactIndex = index;
+                /* if(contacts.message.status === sent){
+                    document.getElementById('message').classList.add('messageReceived');
+                }else{
+                    document.getElementById('message').classList.add('messageSent');
+                } */
             });
-        }
+        },
+        /* applyMessageClass(message) {
+            return message.status === 'sent' ? 'messageSent' : 'messageReceived';
+          } */
+        /* activeDiv(){
+            if(card_people.classList.contains(active)){
+                
+            }
+        } */
     }
 
 }).mount('.content')
